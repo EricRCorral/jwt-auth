@@ -1,0 +1,97 @@
+body {
+  background-color: #fff69f;
+  color: #fff69f;
+}
+
+form,
+.session-container {
+  box-shadow: 0px 0px 8px 2px #351409;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: start;
+  background-color: #351409;
+  button {
+    background-color: transparent;
+    border: 1px solid #fdd870;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    color: #fff69f;
+    &:hover {
+      background-color: #fdd870;
+      color: #351409;
+    }
+  }
+}
+
+.session-container {
+  width: 360px;
+  margin: 35vh auto;
+  h3 {
+    margin: 0px 0px 20px;
+  }
+}
+
+form {
+  display: grid;
+  width: 280px;
+  height: 300px;
+  margin: 25vh auto;
+  h3 {
+    margin: 0px;
+    text-align: center;
+  }
+  small {
+    width: fit-content;
+    color: red;
+    min-height: 16px;
+  }
+  label,
+  small {
+    display: flex;
+    margin: 5px auto 5px 0px;
+  }
+  input,
+  button {
+    background-color: transparent;
+    outline: none;
+    color: #fff69f;
+    &::placeholder {
+      color: #a15501;
+    }
+  }
+  input {
+    border: none;
+    border-bottom: 2px solid #fdd870;
+    width: 100%;
+  }
+}
+
+#login-or-register {
+  cursor: pointer;
+  margin: 0 auto;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.loader {
+  border: 8px solid #d0902f;
+  border-top: 8px double #a15501;
+  border-bottom: 8px double #a15501;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spinning 0.6s linear infinite;
+  margin: 40vh auto;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
